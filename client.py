@@ -13,7 +13,7 @@ ser.isOpen()
 
 print('Enter your message below.\r\nInsert "exit" to leave the application.')
 
-while 1 :
+while True:
     user_input = input("You message >> ")
     if user_input == 'exit':
         ser.close()
