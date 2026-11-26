@@ -25,12 +25,6 @@ void setup() {
   //setup LCD
   Serial.println("Setting up LCD...");
 
-  Wire.beginTransmission(lcd_address);
-  byte error = Wire.endTransmission();
-
-  if (error != 0) { Serial.println("Error in initializing LCD device."); }
-  else { Serial.println("Setting up LCD done!"); }
-
   lcd.init();
   lcd.backlight();
   displayText("Weather Station", "by: Axl & Gian");
@@ -47,8 +41,8 @@ void loop() {
   //read DHT22 data
   float humidity = dht.readHumidity();
   float temperature = dht.readTemperature();
-  if (isnan(humidity)) {Serial.println("DHT22 ERROR: Failed to read humidity!"); humidity = 0; }
-  if (isnan(temperature)) {Serial.println("DHT22 ERROR: Failed to read temperature!"); temperature = 0; };
+  if (isnan(humidity)) {Serial.println("DHT22 ERROR: Failed to read humidity!"); humidity = -99; }
+  if (isnan(temperature)) {Serial.println("DHT22 ERROR: Failed to read temperature!"); temperature = -99; };
 
   //read BMP180 data
   float pressure = bmp.readPressure();
@@ -56,7 +50,7 @@ void loop() {
 
   lcd.clear();
   String top_text = "H: " + String(humidity) + " T: " + String(temperature);
-  String bottom_text = "P: " + String(pressure);
+  String bottom_text = "P: " + String(pressure/101325, 3) + " atm";
   displayText(top_text, bottom_text);
 
   delay(5000); //dht22 requires 2 seconds of delay, but we'll just do it at 5 seconds since it doesnt need to be reading that often
