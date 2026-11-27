@@ -1,0 +1,29 @@
+2026-11-27 15:32:40,313 - __main__ - INFO - Flask server started.
+2026-11-27 15:32:40,336 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-11-27 15:32:40,337 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-11-27 15:43:56,172 - __main__ - INFO - Flask server started.
+2026-11-27 15:43:56,197 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-11-27 15:43:56,197 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-11-27 15:48:43,350 - __main__ - INFO - Flask server started.
+2026-11-27 15:48:43,584 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.157:5000
+2026-11-27 15:48:43,585 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-11-27 15:49:55,753 - __main__ - INFO - Flask server started.
+2026-11-27 15:49:55,777 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.157:5000
+2026-11-27 15:49:55,778 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-11-27 15:50:01,081 - werkzeug - INFO - 192.168.0.20 - - [27/Nov/2026 15:50:01] "GET / HTTP/1.1" 200 -
+2026-11-27 15:50:01,928 - werkzeug - INFO - 192.168.0.20 - - [27/Nov/2026 15:50:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-11-27 15:50:11,331 - werkzeug - INFO - 192.168.0.20 - - [27/Nov/2026 15:50:11] "GET / HTTP/1.1" 200 -
+2026-11-27 17:01:48,719 - __main__ - INFO - Flask server started.
+2026-11-27 17:01:48,762 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.157:5000
+2026-11-27 17:01:48,763 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-11-27 17:07:26,025 - werkzeug - INFO - 192.168.0.20 - - [27/Nov/2026 17:07:26] "GET / HTTP/1.1" 200 -
+2026-11-27 17:07:26,841 - werkzeug - INFO - 192.168.0.20 - - [27/Nov/2026 17:07:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

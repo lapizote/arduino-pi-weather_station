@@ -53,11 +53,7 @@ logger.info("Flask server started.")
 
 @app.route('/')
 def front_page():
-    return 'Hi!'
-
-@app.route('/test')
-def test():
-    return "Test!"
+    return 'Weather station'
 
 @app.route('/weather_update', methods=['POST'])
 def weather_update():
@@ -78,4 +74,4 @@ def weather_update():
         return 'Not a post request.'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
